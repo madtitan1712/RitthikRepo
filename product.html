@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marine Grade Plywood | GriffinPly</title>
+    <title>Products | GriffinPly</title>
     <meta name="description"
-        content="Discover our ultra-premium Marine Grade Plywood, engineered for maximum moisture resistance and durability.">
+        content="Discover our premium selection of high-quality plywood products.">
 
     <!-- Google Fonts: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,64 +15,21 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .product-hero {
-            padding-top: 10rem;
-            padding-bottom: 4rem;
-        }
-
-        .product-meta {
-            display: flex;
-            gap: 2rem;
-            margin: 2rem 0;
-            padding: 1.5rem 0;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .meta-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .meta-label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.25rem;
-        }
-
-        .meta-value {
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .specs-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .spec-item {
-            background-color: var(--bg-color-alt);
-            padding: 1rem;
-            border-radius: var(--radius-sm);
-            display: flex;
-            justify-content: space-between;
-            border: 1px solid var(--border-color);
-        }
-
-        @media (max-width: 768px) {
-            .specs-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .page-header {
+            padding-top: 10rem;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .products-grid-section {
+            padding-top: 2rem;
+            padding-bottom: 6rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -87,7 +44,7 @@
             </a>
             <nav class="nav-links">
                 <a href="about.html" class="nav-link">About</a>
-                <a href="product-griffinply-gold-mr.html" class="nav-link">Products</a>
+                <a href="product.html" class="nav-link active">Products</a>
                 <a href="index.html#contact" class="nav-link btn-primary-outline">Contact Us</a>
             </nav>
             <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -97,89 +54,63 @@
     </header>
 
     <main>
-        <!-- Product Specific Hero -->
-        <section class="section product-hero">
-            <div class="container container-split">
-                <div class="split-image reveal">
-                    <div class="image-wrapper">
-                        <!-- Product Large Image -->
-                        <img src="https://images.unsplash.com/photo-1542013876-0f3db5de1e5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                            alt="Marine Grade Plywood Close-up">
-                        <div class="accent-box"></div>
-                    </div>
-                </div>
-                <div class="split-content reveal stagger-1">
-                    <span class="badge">BWP 710 Grade</span>
-                    <h1 class="hero-title" style="font-size: clamp(2.5rem, 4vw, 3.5rem);">Marine Grade <span
-                            class="gold-text">Plywood</span></h1>
-                    <p class="section-text">
-                        Engineered to withstand the toughest aquatic environments, our Marine Grade Plywood offers
-                        uncompromised strength, water resistance, and structural longevity. Bound with un-extended
-                        phenolic resins.
-                    </p>
-
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Thickness</span>
-                            <span class="meta-value">4mm - 19mm</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Application</span>
-                            <span class="meta-value">Exterior, High Moisture</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Warranty</span>
-                            <span class="meta-value">25 Years</span>
-                        </div>
-                    </div>
-
-                    <a href="index.html#contact" class="btn btn-primary">
-                        Request a Quote
-                        <i class="ph ph-arrow-right"></i>
-                    </a>
-                </div>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container reveal">
+                <span class="badge">Our Collection</span>
+                <h1 class="hero-title">Premium <span class="gold-text">Products</span></h1>
+                <p class="section-text" style="max-width: 600px; margin: 0 auto;">
+                    Explore our range of engineered plywood solutions designed for unmatched strength, reliability, and precision.
+                </p>
             </div>
         </section>
 
-        <!-- Technical Specifications -->
-        <section class="section">
+        <!-- Products Grid Section -->
+        <section class="section products-grid-section">
             <div class="container">
-                <div class="section-header reveal">
-                    <h2 class="section-title">Technical Specifications</h2>
-                    <p class="section-text">Detailed material properties designed for rigorous engineering demands.</p>
-                </div>
+                <div class="product-grid">
+                    <!-- Product Card 1 -->
+                    <a href="product-griffinply-gold-mr.html" class="product-card reveal stagger-1"
+                        title="View Product Details">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1542013876-0f3db5de1e5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="GriffinPly Gold MR Grade">
+                            <span class="product-tag">MR Grade</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>GriffinPly Gold</h3>
+                            <p>Engineered Strength. Everyday Reliability.</p>
+                            <span class="view-details">Discover <i class="ph ph-caret-right"></i></span>
+                        </div>
+                    </a>
 
-                <div class="specs-grid reveal stagger-1">
-                    <div class="spec-item">
-                        <span class="meta-label">Wood Species</span>
-                        <span class="meta-value">Selected Hardwood (Gurjan)</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="meta-label">Adhesive Type</span>
-                        <span class="meta-value">BWP Grade Synthetic Phenol</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="meta-label">Moisture Content</span>
-                        <span class="meta-value">8-12%</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="meta-label">Density</span>
-                        <span class="meta-value">750 kg/m³</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="meta-label">Core Gap</span>
-                        <span class="meta-value">0% Core Gap</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="meta-label">Face Veneer Thickness</span>
-                        <span class="meta-value">1.1mm (min)</span>
-                    </div>
-                </div>
+                    <!-- Product Card 2 -->
+                    <a href="product-griffinply-ultrabond-bwr.html" class="product-card reveal stagger-2"
+                        title="View Product Details">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="GriffinPly Ultrabond BWR Grade">
+                        </div>
+                        <div class="product-info">
+                            <h3>GriffinPly Ultrabond</h3>
+                            <p>Unmatched Bonding. Built for Tough Conditions.</p>
+                            <span class="view-details">Discover <i class="ph ph-caret-right"></i></span>
+                        </div>
+                    </a>
 
-                <div style="text-align: center; margin-top: 4rem;" class="reveal stagger-2">
-                    <p class="section-text">Need custom specifications for your project?</p>
-                    <a href="index.html#contact" class="link-animate">Speak to an engineer <i
-                            class="ph ph-arrow-right"></i></a>
+                    <!-- Product Card 3 -->
+                    <a href="product-griffinply-protec-710-bwp.html" class="product-card reveal stagger-3"
+                        title="View Product Details">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1582260656070-584cb067a57a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="GriffinPly Protec 710 BWP Grade">
+                        </div>
+                        <div class="product-info">
+                            <h3>GriffinPly Protec 710</h3>
+                            <p>Ultimate Protection. Marine-Level Performance.</p>
+                            <span class="view-details">Discover <i class="ph ph-caret-right"></i></span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
